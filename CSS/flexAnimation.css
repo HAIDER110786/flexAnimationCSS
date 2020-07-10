@@ -1,0 +1,67 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.panels{
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.panel{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    transition: 0.7s;
+}
+
+.panel>*{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.7s;
+}
+
+.panel.clicked2{
+    flex: 5;
+    font-size: 20px;
+}
+
+.panel>*:first-child{
+    transform: translateY(-100%);
+}
+
+.panel.clicked>*:first-child{
+    transform: translateY(0);
+}
+
+.panel>*:last-child{
+    transform: translateY(100%);
+}
+
+.panel.clicked>*:last-child{
+    transform: translateY(0);
+}
+
+.panel1{
+    background-image: url(../assets/pic1.jpg);
+}
+
+.panel2{
+    background-image: url(../assets/pic2.jpg);
+}
+
+.panel3{
+    background-image: url(../assets/pic3.jpg);
+    color: white;
+}
+
+.panel4{
+    background-image: url(../assets/pic4.jpg);
+}
+
+.panel5{
+    background-image: url(../assets/pic5.jpg);
+}
